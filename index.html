@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css">
+  
+  <title>Frontend Mentor | Intro component with sign up form</title>
+</head>
+<body>
+  <main class="container">
+
+    <section class="content">
+      <div>
+        <h2>
+          Learn to code by watching others
+        </h2>
+        <p>
+          See how experienced developers solve problems in real-time. Watching scripted tutorials is great, 
+          but understanding how developers think is invaluable. 
+        </p>
+      </div>
+    </section>
+    <section class="wrapper">
+      <p><b>Try it free 7 days</b>then $20/mo. thereafter</p>
+      <form id="some-form" action="#">
+        <div id="input_0" name="firstNameInput">
+          <input id="firstName" type="text" placeholder="First Name">
+          <img id="img_0" src="images/icon-error.svg" alt="">
+        </div>
+        <span id="span_0" class="message">First Name cannot be empty</span>
+        
+        <div id="input_1" name="lastNameInput">
+          <input id="lastName" type="text" placeholder="Last Name">
+          <img id="img_1" src="images/icon-error.svg" alt="">
+        </div>
+        <span id="span_1" class="message">Last Name cannot be empty</span>
+        
+        <div id="input_2" name="emailAddressInput">
+          <input id="emailAddress" type="email" placeholder="Email Address">
+          <img id="img_2" src="images/icon-error.svg" alt="">
+        </div>
+        <span id="span_2" class="message">Looks like this is not an email</span>
+        
+        <div id="input_3" name="passwordInput">
+          <input id="password" type="password" placeholder="Password">
+          <img id="img_3" src="images/icon-error.svg" alt="">
+        </div>
+        <span id="span_3" class="message">Password cannot be empty</span>
+          
+        <button id="enviar" type="submit">CLAIM YOUR FREE TRIAL</button>
+        <p>
+          By clicking the button, you are agreeing to our <span>Terms and Services</span>
+        </p>
+      </form>
+    </section>
+
+  </main>
+</body>
+</html>
+
+
+
+<script type="text/javascript" src="script.js"></script>

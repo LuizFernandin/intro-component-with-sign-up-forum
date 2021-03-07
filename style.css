@@ -1,0 +1,190 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+    :root {
+    --red: hsl(0, 100%, 74%);
+    --green: hsl(154, 59%, 51%);
+    --green-dark: hsl(154, 53%, 40%);
+    --blue: hsl(248, 32%, 49%);
+    --blue-dark: hsl(249, 10%, 26%);
+    --blue-grayish: hsl(246, 25%, 77%);
+    }
+
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+
+      font-family: "Poppins", sans-serif;
+      font-size: 16px;
+    }
+
+    body {
+      background: var(--red) url(../images/bg-intro-mobile.png);
+      min-height  : 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      }
+
+    .container {
+      display: flex;
+      padding: 0;
+    }
+
+    .content {
+      color: white;
+
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+
+      padding: 1rem;
+    }
+
+    .content div {
+      max-width: 35rem;
+    }
+
+    .content h2 {
+      margin-bottom: 2rem;
+      line-height: 3.5rem;
+      font-size: 3rem;
+    }
+
+    .wrapper {
+      max-width: 35rem;
+      max-height: 60rem;
+
+      padding: 1rem;
+    }
+
+    .wrapper p {
+      text-align: center;
+    }
+
+    .wrapper > p {
+      background: var(--blue);
+      cursor: pointer;
+      margin-bottom: 1.5rem;
+      padding: 1rem;
+      border-radius: 10px;
+      border: none;
+      border:solid 1px var(--blue);
+      box-shadow: 0px 0.5rem rgba(0, 0, 0, 0.15);
+      color: white;
+      padding: 1rem auto;
+    }
+
+    .wrapper p b {
+      margin-right: 0.3rem;
+      font-weight: 600;
+    }
+
+    .wrapper form {
+      background: white;
+      border-radius: 8px;
+      border-width: 0;
+      padding: 35px;
+      box-shadow: 0px 0.5rem rgba(0, 0, 0, 0.15);
+
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+      justify-content: center;
+    }
+
+    .wrapper form div {
+        width: 100%;
+        padding: 1rem 0 1rem 2rem;
+        border-radius: 5px;
+        border: none;
+        border:solid 1px var(--blue-grayish);
+        font-weight: 700;
+
+        display: flex;
+        align-items: center;
+    }
+
+    .wrapper form div img {
+        visibility:hidden;
+    }
+
+    .wrapper form input {
+        border: none;
+        width: 85%;
+    }
+
+    .wrapper form input:focus {
+        outline: none;
+    }
+
+    .wrapper form button[type="submit"] {
+      background: var(--green);
+      cursor: pointer;
+      
+      width: 100%;
+      margin-bottom: 1rem;
+      padding: 1rem;
+      border-radius: 5px;
+      border: none;
+      border:solid 1px var(--green);
+      color: white;
+      box-shadow: 0 4px 1px 0 var(--green-dark);
+      font-weight: 600;
+    }
+
+    .wrapper form button[type="submit"]:focus {
+      outline:none;
+    }
+
+    .wrapper form p {
+      color: var(--blue-grayish);
+      font-size: 0.70rem;
+    }
+
+    .wrapper form p span {
+      font-weight: 700;
+      color: var(--red);
+      font-size: 0.70rem;
+      cursor: pointer;
+    }
+
+    .isNoValid {
+        border:solid 2px var(--red) !important;
+    }
+
+    .message {
+        color: var(--red);
+        font-style: italic;
+        font-size: 0.8rem;
+        font-weight: 400;
+        margin-bottom: 1rem;
+        visibility:hidden;
+    }
+
+    @media only screen and (max-width: 680px) {
+      * {
+        font-size: 15px;
+      }
+
+      .container {
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+      }
+      
+      .content {
+        text-align: center;
+      }
+
+      .content h2 {
+        font-size: 2rem;
+        line-height: 2rem;
+      }
+
+      .wrapper form {
+        max-height: 33rem;
+      }
+
+    }
