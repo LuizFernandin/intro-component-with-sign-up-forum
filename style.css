@@ -111,6 +111,7 @@
     }
 
     .wrapper form input {
+        font-weight: 700;
         border: none;
         width: 85%;
     }
